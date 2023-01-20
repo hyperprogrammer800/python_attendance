@@ -27,7 +27,7 @@ Examples
 
 get_attendance(‘emp01’, ‘2020-04-01’) on the sample data should return the following dictionary:
 
-#{
+{
 #    “attended”: true,
 #    “duration”: “12:00”
 }
@@ -37,8 +37,8 @@ The employee attended from 12:00 AM to 12:00 PM, which is exactly 12 hours.
 For 2020-04-02, the employee attended from 12:05 AM to 11:50 AM (11:45 night shift), then checked in again for his next shift at 11:50 PM (so 10 minutes until midnight the next day) for a total of 11:55:
 
 {
-  “attended”: true,
-  “duration”: “11:55”
+#  “attended”: true,
+#  “duration”: “11:55”
 }
 
 For 2020-04-03, the employee checked out at 12:05 PM for a duration of 12:05 (12 hours 5 minutes) calculated from midnight since his last check-in was the previous day.
@@ -52,10 +52,12 @@ This function should return action times in UTC ISO format so that its clients c
 The structure of output should look like this (JSON representation of a dict):
 
 {
-  “days”: [
-    “date”: “2020-04-03”
-    “actions”: [
-{ “action”: “CheckOut”, “time”: “2020-04-01T10:05:00.000000+00:00” }
+#  “days”: [
+#    “date”: “2020-04-03”
+#    “actions”: [
+{
+#  “action”: “CheckOut”, 
+#  “time”: “2020-04-01T10:05:00.000000+00:00” }
     ]
   ]
 }
