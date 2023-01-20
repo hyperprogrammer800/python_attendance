@@ -27,10 +27,10 @@ Examples
 
 get_attendance(‘emp01’, ‘2020-04-01’) on the sample data should return the following dictionary:
 
-{
-    “attended”: true,
-    “duration”: “12:00”
-}
+#{
+#    “attended”: true,
+#    “duration”: “12:00”
+#}
 
 The employee attended from 12:00 AM to 12:00 PM, which is exactly 12 hours.
 
