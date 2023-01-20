@@ -1,7 +1,10 @@
 # python_attendance
 Attendance check and retrieve attendance history from db
+
 Overview
+
 You are given a simple SQLITE3 database for an attendance system with a small set of data.
+
 An employee can perform one of two actions: CheckIn or CheckOut. When an action is performed, it is stored at 2 levels:
 •	An attendance entry is created for the day if no actions were previously performed on that day
 •	An attendance action entry is created recording the time for this specific action and linked to the day’s attendance record
